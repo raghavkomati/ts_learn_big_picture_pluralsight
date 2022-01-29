@@ -1,13 +1,23 @@
 {
-    "extends": "../tsconfig.base",
-    "compilerOptions": {
-        "removeComments": true,
-        "outFile": "../js/app.js"
-    },
-    // "include": [
-    //     "./**/*"
-    // ]
-    "files": [
-        "app.ts"
-    ]
+  "extends": "../tsconfig.base",
+  "compilerOptions": {
+    "removeComments": true,
+    "moduleResolution": "node",
+    "traceResolution": true,
+    // "baseUrl": "./modules",
+    // "paths": {
+    //     "my_lib": ["./customPath"]
+    // },
+    // "rootDirs": [
+    //     "modules",
+    //     "src",
+    //     "ts/modules"
+    // ],
+    // "outFile": "../js/app.js"
+    "module": "commonjs" /* Specify what module code is generated. */
+  },
+  // "include": [
+  //     "./**/*"
+  // ]
+  "files": ["app.ts"]
 }
